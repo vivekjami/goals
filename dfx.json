@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "goals_backend": {
+      "candid": "src/goals_backend/goals_backend.did",
+      "package": "goals_backend",
+      "type": "rust"
+    },
+    "goals_frontend": {
+      "dependencies": [
+        "goals_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/goals_frontend/src/index.html"
+      },
+      "source": [
+        "src/goals_frontend/assets",
+        "dist/goals_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
