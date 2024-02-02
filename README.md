@@ -27,7 +27,7 @@ The data used is a list of goals of companies and was created with mockAPI.
 This is Candid UI file:
 ![Screenshot](screenshots/namequery.png)
 
-The contract (`src/goals_backend/src/lib.rs`) makes a GET request to mockAPI. After deploying, the data can be displayed on CandidUI which is a user interface provided by ICP. We declare in `src/goals_backend/grocery_store_backend.did` what to display on the UI.
+The contract (`src/goals_backend/src/lib.rs`) makes a GET request to mockAPI. After deploying, the data can be displayed on CandidUI which is a user interface provided by ICP. We declare in `src/goals_backend/goals_backend.did` what to display on the UI.
 
 ![Screenshot](screenshots/getgoals.png)
 
